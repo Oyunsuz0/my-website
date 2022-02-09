@@ -1,0 +1,506 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Baloo 2', cursive; */
+} 
+
+
+/* header section start */
+.headerLogo span {
+    color: #4834d4;
+}
+
+.navbar-light .navbar-toggler {
+    box-shadow: none;
+}
+
+.nav-item {
+    font-family: 'Baloo 2', cursive;
+}
+
+
+.nav-item .nav-link{
+    font-size: 16px;
+}
+
+.nav-item .nav-link.active {
+    font-weight: bold;
+    color: #4834d4 !important;
+}
+
+.nav-item .nav-link:hover{
+    color: #4834d4 !important;
+} 
+
+.commonBtn {
+    background-color: #4834d4;
+    color: #ffff;
+    font-family: 'Baloo 2', cursive;
+    border-radius: 30px;
+    transition:all .5s ease;
+    animation: commonBtn 1s infinite;
+}
+
+.commonBtn:hover {
+    background-color: #686de0;
+}
+@keyframes commonBtn {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.007
+        );
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.007);
+    }
+    110% {
+        transform: scale(1);
+    }
+}
+/* header section end */
+
+
+/* banner section start */
+
+.bannerSection {
+    background-color: #f6f5fc;
+    padding: 100px 0 50px 0;
+}
+
+
+.bannerInfo {
+    position: relative;
+}
+.bannerInfo h1 {
+    font-size: 40px;
+}
+
+.bannerInfo p {
+    font-family: 'Baloo 2', cursive;
+    line-height: 20px;
+    margin: 30px 0;
+}
+
+.bannerButton {
+    border-color:#686de0;
+    color: #686de0;
+    border-radius: 30px;
+    outline: none;
+    transition: all .5s ease;
+}
+
+.bannerButton:hover {
+    border-color:#4834d4;
+    color: #4834d4;
+}
+
+.playAnimationButton i {
+    color: #686de0;
+    transition: all .5s ease;
+}
+
+.bannerButton:hover .playAnimationButton i {
+    color: #4834d4;
+}
+
+.playAnimationButton {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background-color:#ffff;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.playAnimationButton::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color:#4834d4;
+    border-radius: 30px;
+    left: 158px;
+    animation: playAnimationButton 1s infinite;
+}
+
+@keyframes playAnimationButton {
+    0%, 30% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: .4;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+
+.bannerImg {
+    width: 400px;
+    border-radius: 30px;
+    animation: bannerImg 1.5s ease;
+}
+
+@keyframes bannerImg {
+        0% {
+            transform: translateX(300px);
+        }
+        110% {
+            transform: translateX(0);
+        }
+    }
+
+
+/* banner section end */
+
+
+/* categories section start */
+.categoryImg {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.categoryInfo {
+    font-size: 10px;
+}
+
+.categoryInfo p {
+    font-family: 'Baloo 2', cursive;
+    font-size: 16px;
+    line-height: 20px;    
+}
+
+.categoryBtn {
+    outline: none;
+    background-color: #4834d4;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: all .5s ease;
+}
+
+.categoryBtn:hover{
+    background-color: #686de0;
+}
+    /* categories section end */
+
+    /* about section start */
+.aboutSection {
+    padding: 70px 0;
+}
+.aboutSection {
+    padding: 70px 0;
+}
+
+.aboutImg {
+    width: 400px;
+}
+
+.mainTitle {
+    position: relative;
+    display: inline-block;
+    color: #000;
+}
+
+.mainTitle span{
+    position: absolute;
+    width: 35px;
+    height: 3px;
+    top: 25;
+    left: 0;
+    background-color: #4834d4;
+    transition: all .5s ease;
+}
+
+.mainTitle:hover span {
+    width: 100%;
+
+}
+
+.mainDecs {
+    font-family: 'Baloo 2', cursive;
+    color: rgba(0, 0, 0, .6);
+    line-height: 20px;
+    margin: 10px 0 20px 0;
+
+}
+    /* about section end */
+
+
+    /* service section start */
+    .serviceSection {
+        padding: 70px 0;
+        background-color: #f6f5fc;
+    }
+
+    .serviceItem{
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2);
+        border-radius: 20px;
+        transition: all .4s ease;
+    }
+
+
+    .serviceItem:hover {
+        background-color: #4834d4;
+        color: #ffff;
+    }
+
+    
+    .serviceItem:hover p{
+        color: #ffff;
+
+    }
+
+
+
+    .serviceIcon {
+    width: 50px;
+    height: 50px;
+    background-color: #ffff;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2);
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    }
+
+    .serviceIcon i{
+        color: #4834d4;
+    }
+
+
+
+    .serviceInfo p{
+        font-family: 'Baloo 2', cursive;
+        font-size: 15px;
+        color: rgba(0, 0, 0 ,.6);
+        transition: all .4s ease;
+    }
+
+    /* service section end */
+
+
+
+    /* pricing section start */
+
+    .pricingSection {
+        padding: 70px 0;
+    }
+
+    .pricing {
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .2);
+        border-radius: 10px;
+        height: 390px;
+    }
+    
+
+    .pricingBasic h6 {
+        font-size: 18px;
+    }
+
+
+    .pricingBasic h1 {
+        font-family: 'Baloo 2', cursive;
+    }
+
+
+    .pricingBasic h1 span {
+        font-size: 24px;
+        color: rgba(0, 0, 0 .4);
+    }
+
+    .pricingBorder {
+        width: 80%;
+        height: .5px;
+        background-color: #4834d4;
+        margin: 0 auto;
+    }
+
+
+    .pricingInfo p {
+        font-family: 'Baloo 2', cursive;
+        transition: all .5s ease;
+    }
+
+
+
+    .pricingInfo p:hover {
+        background-color: rgba(0, 0, 0, .1);
+    }
+
+    .pricingButton {
+        width: 100%;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 30px;
+        outline: none;
+        background-color: #686de0;
+        transition: all .5s ease;
+    }
+
+    .pricingButton:hover {
+        width: 80%;
+        background-color: #4834d4;
+    }
+
+
+    .pricingTwo {
+        background-color: #4834d4;
+        transform: scaleY(1.1);
+        color: #ffff;
+    }
+
+    .pricingTwo .pricingBorder {
+        background-color: #fff;
+    }
+
+    .pricingTwo .pricingButton {
+        background-color: transparent;
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .6);
+    }
+    /* pricing section end */
+
+
+
+    /* footer section start */
+    footer {
+        padding: 80px 0;
+        background-color: #f6f5fc;
+    }
+
+    .socialMedia {
+
+    }
+
+    .socialMedia h1{
+        font-family: 'Baloo 2', cursive;
+    }
+
+    .socialMedia p {
+        font-size: 14px;
+        font-family: 'Baloo 2', cursive;
+        line-height: 20px;
+    }
+
+    .socialItem i {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+        cursor: pointer;
+        transition: all .5s ease;
+    }
+
+    .socialItem i:hover{
+        background-color: #4834d4;
+        color: #fff;
+    }
+
+    .footerCompany a{
+        font-size: 14px;
+        text-decoration: none;
+        font-family: 'Baloo 2', cursive;
+    }
+
+    .footerCompany a:hover{
+        text-decoration: underline;
+    }
+
+    .footerContact p, span{
+        font-size: 14px;
+    }
+
+    .newsLetterInput input {
+        width: 100%;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        padding: 10px;
+        font-family: 'Baloo 2', cursive;
+    }
+
+
+    .newsLetterInput .newsLetterButton {
+        width: 100%;
+        border: none;
+        background-color: #4834d4;
+        padding: 10px 0;
+        color: #fff;
+        border-radius: 30px;
+        font-weight: bold;
+        transition: all .5s ease;
+    }
+
+    .newsLetterInput .newsLetterButton:hover{
+        background-color: #686de0;
+    }
+
+
+
+    /* footer section end */
+
+
+
+
+
+
+
+
+
+    /*  media query */
+
+@media screen and (max-width: 991.99px) {
+    /* header section start */
+    .menuLink {
+        margin: 10px 0 0 0; !important;
+    }
+    /* header section end */
+
+    /* about section start */
+    .aboutInfo {
+        text-align: center;
+    }
+    /* about section end */
+
+
+
+    /* pricing section start */
+    .pricingTwo {
+        transform: scaleY(1);
+    }
+
+    /* pricing section end */
+
+}
+
+
+
+
+
+@media screen and (max-width: 500.99px) {
+    /* banner section start */
+    .bannerImg {
+        width: 100%;
+    }
+    /* banner section end */
+
+    /* about section start */
+    .aboutImg {
+        width: 100%;
+    }
+    /* about section end */
+}
+
+
+
